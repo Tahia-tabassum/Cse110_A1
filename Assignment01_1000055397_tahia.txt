@@ -1,0 +1,283 @@
+Assignment-01 (coding tasks)
+//Task10
+10. To find out which of the following are legal and which are not legal,we have to know the rules of java ;
+here are the rules of java which identifiers must follow,
+1.must not begin with a digit
+2.should not be a Java keyword (some reserved words)
+3.spaces or special characters are not allowed(except"_" and "$")
+4.(A-Z),(a-z),(0-9),(_),($) are allowed
+
+So, now lets explain if the following examples are legal or illegal in Java, 
+a)hungry
+int hungry;
+ Result: valid
+ Reason:It started with a letter and followed all rules.
+b)2AB
+int2AB;
+Result: invalid
+Reason: it starts with a number which is not allowed.
+c)312.2
+int312.2;
+Result: invalid
+Reason: it starts with a number also it contains a decimal point which is why its not valid
+d)MOBILE
+intMOBILE;
+Result: valid
+Reason: starts with a letter and follows all the rules
+e)"Ans"
+int"Ans";
+Result: invalid
+Reason: it starts with ( " ) but only (_) underscore and dollar ($) are allowed also it is a string literal
+f) $30
+int$30;
+Result: valid
+Reason:starts with (&) dollar which is valid but it is discouraged for identifiers
+g)Yes/No
+intYes/No;
+Result: invalid
+Reason:it contains a symbol (/) which is not allowed
+h)student-id
+intstudent-id;
+Result:invalid
+Reason: contains a symbol (-) hyphen which is not allowed
+i)A+3
+intA+3;
+Result:invalid
+Reason: contains a special character (+) plus which is invalid
+j)`X`
+int`X`;
+Result: invalid
+Reason: starts with a quote (`) which is a character literal not an identifier
+k)return
+intreturn;
+Result: invalid
+Reason: invalid because "return" is a JAVA keyword
+
+//Task11(2.1)
+public class firstassignment{
+  public static void main(String[]args){
+    // 2.1 decrlaration and initialization
+    int n=99;
+    System.out.println(n);
+  }
+}
+
+//Task11(2.2)
+public class firstassignment{
+  public static void main(String[]args){
+    // 2.2 addition
+    int n=99;
+    int n2=11;
+    System.out.println(n+n2);
+  }
+}
+
+//Task11(2.3)
+public class firstassignment{
+  public static void main(String[]args){
+    // 2.3 multiplication and division
+    int n=99;
+    int n2=11;
+    System.out.println("here is the product value="+n*n2);
+    System.out.println("here is the division value="+n/n2);
+  }
+}
+
+
+//Task11(2.4)
+public class firstassignment{
+  public static void main(String[]args){
+    // 2.4 repeat exercises for double data type(2.1)
+    double n=99;
+    System.out.println(n);
+    //output=99.0
+  }
+}
+
+public class firstassignment{
+  public static void main(String[]args){
+    // 2.4 repeat exercises for double data type(2.2)
+    double n=99;
+    double n2=11;
+    System.out.println(n+n2);
+    //output=110.0
+  }
+}
+
+public class firstassignment{
+  public static void main(String[]args){
+    // 2.4 repeat exercises for double data type(2.3)
+    double n=99;
+    double n2=11;
+    System.out.println("here is the product value="+n*n2);
+    //result=1089.0
+    System.out.println("here is the division value="+n/n2);
+    //result=9.0
+  }
+}
+
+//Task11(2.5)
+public class firstassignment{
+  public static void main(String[]args){
+    double n=99;
+    int n2=11;
+    System.out.println(n+n2);
+  }
+}
+
+public class firstassignment{
+  public static void main(String[]args){
+    double n=99;
+    int n2=11;
+    System.out.println("here is the product value="+n*n2);
+    //result= 1089.0
+    System.out.println("here is the division value="+n/n2);
+    //result=9.0
+  }
+}
+
+//Task11(2.6)
+public class firstassignment{
+  public static void main(String[]args){
+    //operation with string
+    String str1="99" , str2="11";
+    System.out.println(str1+str2);
+  }
+}
+
+//Task11(2.6)
+public class firstassignment{
+  public static void main(String[]args){
+    //operation with string and integer
+    String str1="99";
+    int n=11;
+    System.out.println(str1+n);
+    //string first and output=9911
+    System.out.println(n+str1);
+    //integer first and result=1199
+  }
+}
+
+//Task12
+public class firstassignment{
+  public static void main(String[]args){
+    double radious=4;
+    //here is the value of circumference and area of the circle
+    double circumference=2*Math.PI*radious;
+    double area=Math.PI*radious*radious;
+    System.out.println("The value of circumference="+ circumference );
+    System.out.println("The value of area=" +area);
+  }
+}
+
+//Task13
+public class firstassignment{
+  public static void main(String[]args){
+    int n=5000;
+    int last_two_digits=n%100;
+    System.out.println(last_two_digits );
+  }
+}
+
+//Task14
+public class firstassignment{
+  public static void main(String[]args){
+    int inch=1000;
+    double meter=inch*0.0254;
+    System.out.println("Here is the value of inches converted to meters=" +meter );
+  }
+}
+
+//Task15
+public class firstassignment{
+  public static void main(String[]args){
+    //(a)by creating a third variable
+    iy,z;
+    x=1;
+    y=2;
+    z=x;
+    x=y;
+    y=z;
+    System.out.println("x="+x );
+    System.out.println("y="+y);
+  }
+}
+
+
+//Task15
+public class firstassignment{
+  public static void main(String[]args){
+    //(b)without creating any variables
+    int x=1;
+    int y=2;
+    x=x+y;
+    y=x-y;
+    x=x-y;
+    System.out.println("x="+x);
+    System.out.println("y="+y);
+  }
+}
+
+//Task16
+public class firstassignment{
+  public static void main(String[]args){
+    int minutes=3456789;
+    int years=525600; //there are 525,600 minutes in a year
+    int days=1440; //there are 1440 minutes in a day
+    int year=minutes/years;
+    int remaining=minutes%years;
+    int day=remaining/days;
+    System.out.println(minutes+" is approximately "+year+" years and "+day+" days");
+  }
+}
+
+//Task17
+public class firstassignment{
+  public static void main(String[]args){
+    int a=2;
+    int b=5;
+    int c=8;
+  int result=(2*b*(c-a)/3)+7;
+    System.out.println(result);
+  }
+}
+
+
+//Task18
+public class firstassignment{
+  public static void main(String[]args){
+    int id=1000055397;
+    int num1=id%10;
+    int num2=(id%100)/10;
+    System.out.println(num1+num2);
+  }
+}
+
+
+//Task19
+public class firstassignment{
+  public static void main(String[]args){
+    int a=8;
+    int b=3;
+    double value1=(3/2)*a*b;
+    double value2=(Math.sqrt(3))/4*a*a;
+    double area=value1+value2;
+    System.out.println("area="+area+"squnit");
+  }
+}
+
+
+//Task20
+public class firstassignment{
+  public static void main(String[]args){
+    double a=4.5;
+    double b=9.5;
+    double c=Math.sqrt(a*a+b*b);
+    System.out.println("SinA="+a/c);
+    System.out.println("CosA="+b/c);
+    System.out.println("SinB="+b/c);
+    System.out.println("CosB="+a/c);
+  }
+}
+
+
