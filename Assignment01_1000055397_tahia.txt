@@ -7,7 +7,7 @@ here are the rules of java which identifiers must follow,
 3.spaces or special characters are not allowed(except"_" and "$")
 4.(A-Z),(a-z),(0-9),(_),($) are allowed
 
-So, now lets explain if the following examples are legal or illegal in Java, 
+So, now lets explain if the following examples are legal or illegal in Java
 a)hungry
 int hungry;
  Result: valid
